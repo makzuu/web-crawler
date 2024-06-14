@@ -10,10 +10,13 @@
   "author": "",
   "license": "ISC",
   "type": "module",
+  "jest": {
+    "transform": {}
+  },
   "devDependencies": {
     "jest": "^29.7.0"
   },
-  "jest": {
-      "transform": {}
+  "dependencies": {
+    "jsdom": "^24.1.0"
   }
 }
