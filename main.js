@@ -1,4 +1,5 @@
-import { argv, exit } from 'process'
+import { argv, exit } from "process"
+import { crawlPage } from "./crawl.js"
 
 function main() {
     if (argv.length !== 3) {
@@ -7,6 +8,8 @@ function main() {
     }
     const baseUrl = argv[2]
     console.log(`base url: ${baseUrl}`)
+
+    crawlPage(baseUrl)
 }
 
 main()
